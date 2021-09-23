@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline & Block Styling</title>
+    <style>
+      * {
+        /* To prevent px addition when using padding with width */
+        box-sizing: border-box;
+      }
+
+      li {
+        /* So it's lined up sideways instead of downwards */
+        display: inline;
+      }
+
+      li a {
+        padding-right: 20px;
+      }
+
+      img {
+        /* You can't use margin auto on an inline element, so you have to use block */
+        display: block;
+        margin: auto;
+      }
+
+      .box {
+        /* You can't use width, margin, etc on inline */
+        /* display: inline; */
+        display: inline-block;
+        width: 32%;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Fashion</a></li>
+    </ul>
+    <br /><br />
+    <img src="/CSS%20Basics/img/leaf.png" alt="My Image" />
+    <br /><br />
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ducimus
+        minima itaque soluta doloremque similique eaque. Voluptatem tempora
+        velit ullam!
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ducimus
+        minima itaque soluta doloremque similique eaque. Voluptatem tempora
+        velit ullam!
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ducimus
+        minima itaque soluta doloremque similique eaque. Voluptatem tempora
+        velit ullam!
+      </p>
+    </div>
+  </body>
+</html>
